@@ -9,7 +9,7 @@ const courses = [
 ];
 app.get("/", function(req, res) {
   //when we get an http get request to the root/homepage
-  res.send("Hello World");
+  res.send("Hello ddddd World");
 });
 //when we route to /courses
 app.get("/courses", function(req, res) {
