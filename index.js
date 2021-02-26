@@ -27,11 +27,15 @@ app.get("/courses/:id", function(req, res) {
   res.send(course);
 });
 //using the http post request we can create a new course
-app.post("/courses", function(req, res) {
+app.post("/esp", function(req, res) {
   //create a course object
   const course = {
-      id: courses.length + 1,
-      name: req.body.name
+      id_esp: req.body.id,
+      temp: req.body.temp,
+      hummidity:req.body.hummidity,
+      time: req.body.time,
+      warehouse: req.body.warehouse,
+      warehouse_loc: req.body.warehouse_loc,
   };
   //add the course to the array
   courses.push(course);
